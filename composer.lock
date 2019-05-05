@@ -1788,7 +1788,7 @@
             "dist": {
                 "type": "path",
                 "url": "../weather",
-                "reference": "a9e8aba00b53c65a6a671c854b5100e43ab82511",
+                "reference": "e41c5d73924d23df03eda1460c6676d85c09e797",
                 "shasum": null
             },
             "require": {
