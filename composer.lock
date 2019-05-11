@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6691a4320e2d9cc4aaea012baffc10af",
+    "content-hash": "a5b9d7e64428862ad49468996eaf9c48",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1783,13 +1783,56 @@
             "time": "2019-02-22T10:30:00+00:00"
         },
         {
-            "name": "overtrue/weather",
+            "name": "overtest/weather",
             "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../weather",
-                "reference": "e41c5d73924d23df03eda1460c6676d85c09e797",
+                "reference": "8b7cb9e47e7770e0eac031ee51caefbfe3dc49a8",
                 "shasum": null
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3",
+                "mockery/mockery": "^1.2",
+                "overtest/weather": "dev-master",
+                "phpunit/phpunit": "^7.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "overtest\\Weather\\": "./src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtest",
+                    "email": "springlight@126.com"
+                }
+            ],
+            "description": "A weather SDK"
+        },
+        {
+            "name": "overtrue/weather",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/weather.git",
+                "reference": "5cfebed4b1d1024c4b3276a4cb34d13437b5e76a"
+            },
+            "dist": {
+                "type": "path",
+                "url": "https://api.github.com/repos/overtrue/weather/zipball/5cfebed4b1d1024c4b3276a4cb34d13437b5e76a",
+                "reference": "5cfebed4b1d1024c4b3276a4cb34d13437b5e76a",
+                "shasum": null,
+                "mirrors": [
+                    {
+                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.3",
@@ -5630,6 +5673,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "overtest/weather": 20,
         "overtrue/weather": 20
     },
     "prefer-stable": true,
